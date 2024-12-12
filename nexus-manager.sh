@@ -104,7 +104,7 @@ download_prover() {
         if [ "$OS" = "Darwin" ]; then
             if [ "$ARCH" = "x86_64" ]; then
                 echo -e "${YELLOW}下载 macOS Intel 架构 Prover...${NC}"
-                curl -L "https://github.com/qzz0518/nexus-run/releases/download/v0.4.2/prover-macos-amd64" -o "$prover_path"
+                curl -L "https://github.com/linflg/nexus-run/releases/download/v1.0.0/prover" -o "$prover_path"
             elif [ "$ARCH" = "arm64" ]; then
                 echo -e "${YELLOW}下载 macOS ARM64 架构 Prover...${NC}"
                 curl -L "https://github.com/qzz0518/nexus-run/releases/download/v0.4.2/prover-arm64" -o "$prover_path"
