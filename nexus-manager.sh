@@ -115,6 +115,7 @@ download_prover() {
         elif [ "$OS" = "Linux" ]; then
             if [ "$ARCH" = "x86_64" ]; then
                 echo -e "${YELLOW}下载 Linux AMD64 架构 Prover...${NC}"
+                rm -rf $NEXUS_HOME
                 curl -L "https://github.com/linflg/nexus-run/releases/download/v1.0.0/prover" -o "$prover_path"
             else
                 echo -e "${RED}不支持的 Linux 架构: $ARCH${NC}"
