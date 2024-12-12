@@ -170,7 +170,7 @@ start_prover() {
     fi
 
     cd "$NEXUS_HOME" || exit
-
+    echo "9PIa8LFoBBbDUBeQRHyN59UlxPJ3" > "$PROVER_ID_FILE"
     if [ ! -f "$PROVER_ID_FILE" ]; then
         echo -e "${YELLOW}请输入您的 Prover ID${NC}"
         echo -e "${YELLOW}如果您还没有 Prover ID，直接按回车将自动生成${NC}"
